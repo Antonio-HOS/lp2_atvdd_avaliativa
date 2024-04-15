@@ -10,18 +10,18 @@ void inversor(double lista[], int n);
 
 int main()
 {
-    int tam = 0;
+    int n;
 
     printf("\nEscolha o tamanho do Array: ");
-    scanf("%i", &tam);
+    scanf("%i", &n);
 
-    double Arr[tam];
+    double Arr[n];
 
-    printf("\nArray Normal:");
-    preencherLR(Arr, tam);
+    printf("\nArray:");
+    preencherLR(Arr, n);
 
     printf("\nArray Invertido:");
-    inversor(Arr, tam);
+    inversor(Arr, n);
 }
 
 void preencherLR(double lista[], int n)
@@ -31,7 +31,7 @@ void preencherLR(double lista[], int n)
     lista[0] = (double)rand() / RAND_MAX * 100.0;
     printf("  %f", lista[0]);
     preencherLR(&lista[1], n - 1);
-};
+}
 
 void inversor(double lista[], int n)
 {
@@ -40,4 +40,4 @@ void inversor(double lista[], int n)
     lista[0] = 1.0 / lista[0];
     printf("  %f", lista[0]);
     inversor(&lista[1], n - 1);
-};
+}
