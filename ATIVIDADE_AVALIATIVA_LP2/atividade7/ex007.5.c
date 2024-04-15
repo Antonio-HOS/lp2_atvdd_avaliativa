@@ -12,7 +12,7 @@ int desenhaLinhaR(int tamanho, char linha[]) {
     return 0;
 }
 
-int desenhaTriangulo(int tamanho, int tipo) {
+int desenhaTriangulo1(int tamanho, int tipo) {
     if (tamanho < 1 || tamanho > 20) {
         printf("O tamanho deve estar entre 1 e 20.\n");
         return 1;
@@ -70,6 +70,6 @@ int main() {
     printf("Digite o tipo do triângulo: \n");
     scanf("%i", &tipo);
 
-    desenhaTriangulo(tam, tipo);
+    desenhaTriangulo1(tam, tipo);
     return 0;
 }
