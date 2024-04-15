@@ -1,6 +1,6 @@
 /*
 Implemente uma função para calcular o desvio padrão de um conjunto de valores armazenados em um array de valores de tipo double. O cabeçalho da função deve ser:
-double desvioPadraoG(double x[ ]);
+    double desvioPadraoG(double x[ ]);
 A quantidade de elementos no array é armazenada na variável global, N, declarada como sendo de tipo int. Esta função deve utilizar, internamente, a função definida no exercício anterior para calcular o valor médio. Implemente uma aplicação que demonstra a aplicação da função.
 */
 
@@ -32,7 +32,7 @@ void preencherLR(double lista[], int n)
     lista[0] = (double)rand() / RAND_MAX * 100.0;
     printf("  %f", lista[0]);
     preencherLR(&lista[1], n - 1);
-};
+}
 
 double valorMedioG(double x[])
 {

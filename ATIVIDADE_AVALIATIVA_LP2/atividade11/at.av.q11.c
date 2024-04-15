@@ -1,29 +1,42 @@
-//Em sala de aula analisamos uma vers„o recursiva para calcular a soma dos elementos de uma array.
-//FaÁa uma vers„o recursiva da funÁ„o que implementa o c·lculo da mÈdia dos elementos de um array.
-//Implemente uma aplicaÁ„o que demonstra a aplicaÁ„o da funÁ„o.
-//#include<stdio.h>
-#include<stdlib.h>
+/*
+Em sala de aula analisamos uma vers√£o recursiva para calcular a soma dos elementos de uma array. Fa√ßa uma vers√£o recursiva da fun√ß√£o que implementa o c√°lculo da m√©dia dos elementos de um array. Implemente uma aplica√ß√£o que demonstra a aplica√ß√£o da fun√ß√£o.
+*/
+
+#include <stdio.h>
+#include <stdlib.h>
 int N = 4;
 
-double soma_recursiva(double vetor[], int tamanho){
-	if(tamanho == 0){
-		return 0;
-	}else{
-		return vetor[tamanho-1]+soma_recursiva(vetor, tamanho-1);
-	}
-}
+double soma_recursiva(double vetor[], int tamanho);
+double calculo_media(double vetor[], int tamanho);
 
-double calculo_media(double vetor[], int tamanho){
-	if(tamanho == 0){
-		return 0;
-	}else{
-		double soma = soma_recursiva(vetor, tamanho);
-		return soma/tamanho;
-	}
-}
-
-int main(void){
-	double vetor[ ] = {2.2, 3.3, 4.2, 2.3};
+int main(void)
+{
+	double vetor[] = {2.2, 3.3, 4.2, 2.3};
 	double media = calculo_media(vetor, N);
 	printf("A media eh: %2.f", media);
+}
+
+double soma_recursiva(double vetor[], int tamanho)
+{
+	if (tamanho == 0)
+	{
+		return 0;
+	}
+	else
+	{
+		return vetor[tamanho - 1] + soma_recursiva(vetor, tamanho - 1);
+	}
+}
+
+double calculo_media(double vetor[], int tamanho)
+{
+	if (tamanho == 0)
+	{
+		return 0;
+	}
+	else
+	{
+		double soma = soma_recursiva(vetor, tamanho);
+		return soma / tamanho;
+	}
 }
