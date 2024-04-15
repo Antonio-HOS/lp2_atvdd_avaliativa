@@ -1,8 +1,8 @@
-//Implemente uma função para normalizar um conjunto de valores armazenados em um array de tipo double,
-//para que eles passem a ter média zero. O cabeçalho da função deve ser: void normaliza(double x_inout[ ]);
-//A quantidade de elementos no array é armazenada na variável global, N, declarada como sendo de tipo int.
-//Esta função deve utilizar, internamente, a função definida no exercício anterior (8) para calcular o 
-//valor médio. Implemente uma aplicação que demonstra a aplicação da função.
+//Implemente uma funï¿½ï¿½o para normalizar um conjunto de valores armazenados em um array de tipo double,
+//para que eles passem a ter mï¿½dia zero. O cabeï¿½alho da funï¿½ï¿½o deve ser: void normaliza(double x_inout[ ]);
+//A quantidade de elementos no array ï¿½ armazenada na variï¿½vel global, N, declarada como sendo de tipo int.
+//Esta funï¿½ï¿½o deve utilizar, internamente, a funï¿½ï¿½o definida no exercï¿½cio anterior (8) para calcular o 
+//valor mï¿½dio. Implemente uma aplicaï¿½ï¿½o que demonstra a aplicaï¿½ï¿½o da funï¿½ï¿½o.
 #include <stdio.h>
 #include <stdlib.h>
 int N = 3;
@@ -30,4 +30,3 @@ int main(){
     normaliza(vetor);
 	return 0;
 }
-
