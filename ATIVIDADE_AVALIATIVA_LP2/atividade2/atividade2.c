@@ -2,15 +2,9 @@
 #include <math.h>
 #include <stdlib.h>
 
-int main(int argc, char *argv[])
-{
 
-    int tam = atoi(argv[1]);
-    int tipo = atoi(argv[2]);
-
-    printf("%d, %d", tam, tipo);
-
-    if (tam < 1 || tam > 20)
+int desenhaTriangulo(int tam, int tipo){
+ if (tam < 1 || tam > 20)
     {
         return 1;
     }
@@ -71,11 +65,11 @@ int main(int argc, char *argv[])
         for (int i = tam; i > 0; i--)
         {
 
-            for (int w = i; w > 0 ; w--)
+            for (int w = i-1; w > 0 ; w--)
             {
                 printf(" ");
             }
-            for (int j = 0; j < tam-i; j++)
+            for (int j = 0; j < tam-i+1; j++)
             {
                 printf("*");
             }
@@ -88,6 +82,18 @@ int main(int argc, char *argv[])
     }else{
         return 1;
     }
+};
+
+
+int main(int argc, char *argv[])
+{
+
+    int tam = atoi(argv[1]);
+    int tipo = atoi(argv[2]);
+desenhaTriangulo( tam,  tipo);
+    // printf("%d, %d", tam, tipo);
+
+   
 
 
     return 0;

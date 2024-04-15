@@ -2,8 +2,12 @@
 #include <math.h>
 #include <stdlib.h>
 
-int celula( int tam)
+int desenhaTabuleiro(int tam)
 {
+    if (tam < 2 || tam > 8)
+    {
+        return 1;
+    }
 
     int x = 0;
     if (tam % 2 == 0)
@@ -96,12 +100,7 @@ int main(int argc, char *argv[])
 
     printf("\n");
 
-    if (tam < 2 || tam > 8)
-    {
-        return 1;
-    }
-
-    celula( tam);
+    desenhaTabuleiro(tam);
 
     return 0;
 }
