@@ -6,6 +6,8 @@ A quantidade de elementos no array é armazenada na variável global, N, declara
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
 int N = 10;
 
 void preencherLR(double x[], int n);

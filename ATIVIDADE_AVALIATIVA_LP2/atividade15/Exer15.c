@@ -4,6 +4,8 @@ Faça uma implementação recursiva de uma função que, com base num array de t
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
 
 void preencherLR(double lista[], int n);
 void inversor(double lista[], int n);

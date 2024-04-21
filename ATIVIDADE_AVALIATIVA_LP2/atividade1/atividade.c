@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
+#include "../lista_01.h"
 
 // Implemente a função 
 // int desenhaQuadrado(int tamanho, int vazado)
@@ -10,6 +10,24 @@
 // Se o parâmetro vazado for verdadeiro deve-se desenhar apenas as bordas do quadrado, caso contrário a função desenha ele preenchido. 
 // Implemente uma aplicação que demonstra a aplicação da função. 
 
+// como usar:
+// AO RODAR O CODIGO PASSE OS NUMEROS COMO PARAMENTRO NA MAIN 
+// EX .\a.exe 4 0
+
+
+int desenhaQuadrado(int tam, int vaz);
+
+int main(int argc, char *argv[])
+{
+
+    int tam = atoi(argv[1]);
+    int vaz = atoi(argv[2]);
+
+desenhaQuadrado(tam,vaz);
+   
+
+    return 0;
+}
 
 int desenhaQuadrado(int tam, int vaz){
      if (tam < 1 || tam > 20)
@@ -59,15 +77,3 @@ int desenhaQuadrado(int tam, int vaz){
         printf("\n");
     }
 };
-
-int main(int argc, char *argv[])
-{
-
-    int tam = atoi(argv[1]);
-    int vaz = atoi(argv[2]);
-
-desenhaQuadrado(tam,vaz);
-   
-
-    return 0;
-}

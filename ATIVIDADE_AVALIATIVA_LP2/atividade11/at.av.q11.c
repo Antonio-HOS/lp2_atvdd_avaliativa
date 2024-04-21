@@ -4,6 +4,8 @@ Em sala de aula analisamos uma versão recursiva para calcular a soma dos elemen
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
 int N = 4;
 
 double soma_recursiva(double vetor[], int tamanho);

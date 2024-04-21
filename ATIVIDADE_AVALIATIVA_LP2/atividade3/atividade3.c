@@ -1,6 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
+// como usar:
+// AO RODAR O CODIGO PASSE OS NUMEROS COMO PARAMENTRO NA MAIN 
+// EX .\a.exe 10 1
+int desenhaPiramide(int tam, int tipo);
+
+int main(int argc, char *argv[])
+{
+
+    int tam = atoi(argv[1]);
+    int tipo = atoi(argv[2]);
+
+    // printf("%d, %d", tam, tipo);
+
+    desenhaPiramide(tam, tipo);
+
+    return 0;
+}
+
 
 int desenhaPiramide(int tam, int tipo)
 {
@@ -46,16 +66,3 @@ int desenhaPiramide(int tam, int tipo)
         }
     }
 };
-
-int main(int argc, char *argv[])
-{
-
-    int tam = atoi(argv[1]);
-    int tipo = atoi(argv[2]);
-
-    // printf("%d, %d", tam, tipo);
-
-    desenhaPiramide(tam, tipo);
-
-    return 0;
-}

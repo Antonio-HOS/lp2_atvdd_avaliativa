@@ -5,6 +5,8 @@ Modifique a função do Exercício 10 para que, agora, receba o tamanho do array
 
 #include <stdio.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
 
 void preencherLR(double x[], int n);
 double valorMedioG(double x[], int n);

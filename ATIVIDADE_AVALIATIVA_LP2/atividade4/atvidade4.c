@@ -1,6 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
+// como usar:
+// AO RODAR O CODIGO PASSE OS NUMEROS COMO PARAMENTRO NA MAIN 
+// EX .\a.exe 6
+
+int desenhaTabuleiro(int tam);
+
+int main(int argc, char *argv[])
+{
+
+    int tam = atoi(argv[1]);
+
+    printf("\n");
+
+    desenhaTabuleiro(tam);
+
+    return 0;
+}
+
 
 int desenhaTabuleiro(int tam)
 {
@@ -89,18 +109,6 @@ int desenhaTabuleiro(int tam)
             }
         }
     }
-
-    return 0;
-}
-
-int main(int argc, char *argv[])
-{
-
-    int tam = atoi(argv[1]);
-
-    printf("\n");
-
-    desenhaTabuleiro(tam);
 
     return 0;
 }

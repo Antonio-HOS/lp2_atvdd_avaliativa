@@ -1,6 +1,27 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
+// como usar:
+// AO RODAR O CODIGO PASSE OS NUMEROS COMO PARAMENTRO NA MAIN 
+// EX .\a.exe 10 2
+
+int desenhaTriangulo(int tam, int tipo);
+
+int main(int argc, char *argv[])
+{
+
+    int tam = atoi(argv[1]);
+    int tipo = atoi(argv[2]);
+desenhaTriangulo( tam,  tipo);
+    // printf("%d, %d", tam, tipo);
+
+   
+
+
+    return 0;
+}
 
 
 int desenhaTriangulo(int tam, int tipo){
@@ -83,18 +104,3 @@ int desenhaTriangulo(int tam, int tipo){
         return 1;
     }
 };
-
-
-int main(int argc, char *argv[])
-{
-
-    int tam = atoi(argv[1]);
-    int tipo = atoi(argv[2]);
-desenhaTriangulo( tam,  tipo);
-    // printf("%d, %d", tam, tipo);
-
-   
-
-
-    return 0;
-}

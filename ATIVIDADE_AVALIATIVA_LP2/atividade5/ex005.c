@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "../lista_01.h"
 
 int desenhaLinha(int tamanho, char linha[]) {
     if (tamanho < 1 || tamanho > 20) {

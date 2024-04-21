@@ -6,6 +6,8 @@ Modifique a função do Exercício 8 para que, agora, receba o tamanho do array 
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include "../lista_01.h"
+
 
 double valorMedio(double x[], int n);
 

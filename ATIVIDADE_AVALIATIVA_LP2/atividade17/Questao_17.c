@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "../lista_01.h"
+
 
 int maior_valor(int vetor[], int tam, int indice);
 

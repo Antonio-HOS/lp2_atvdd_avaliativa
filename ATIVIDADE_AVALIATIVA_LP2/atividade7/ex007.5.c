@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "../lista_01.h"
 
 int desenhaLinhaR(int tamanho, char linha[]) { 
     if (tamanho < 1 || tamanho > 20) {

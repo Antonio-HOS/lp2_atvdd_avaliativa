@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../lista_01.h"
+
 
 void inverter_string(char str[], int inicio, int fim);
 int verificar_palindromo(char str[], int inicio, int fim);
